@@ -103,6 +103,7 @@ viewOrder.addEventListener("click", () => {
     hc.classList.remove("hide");
     check.classList.remove("hide");
 
+    let sum = 0;
     wishes.innerHTML = '';
     food.forEach(item => {
         const itemContainer = document.createElement("div");
