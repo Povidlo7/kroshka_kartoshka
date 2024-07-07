@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+
+body {
+    background-color: rgb(193, 240, 193);
+    font-family: "Tiny5", sans-serif;
+}
+
+.items {
+    margin: 0 auto;
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.headContainer {
+    display: flex;
+}
+
+.headContainer > .edit-btn {
+    max-height: 20px;
+}
+
+.itemContainer {
+    border-width: 2px;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    border-color: gray;
+    border-style: solid;
+}
+
+.itemsContainer > div:last-child {
+    border-width: 2px;
+    border-right: 0;
+    border-left: 0;
+    border-color: gray;
+    border-style: solid;
+}
+
+
+.itemContainer > .image > img {
+    width: 100px;
+    height: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+.counter {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    min-width: 16px;
+    padding: 2px 6px;
+    font-size: 16px;
+    background-color: goldenrod;
+    border-radius: 20px;
+}
+
+.add-btn,
+.plus-btn,
+.minus-btn,
+.edit-btn
+ {
+    font-family: "Tiny5", sans-serif;
+    background-color: goldenrod;
+    border-radius: 5px;
+}
+
+.minus-btn {
+    background-color: red;
+}
+
+.voc {
+    display: flex;
+    justify-content: center;
+}
+
+.view-order {
+    font-family: "Tiny5", sans-serif;
+    background-color: goldenrod;
+    border-radius: 5px;
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+}
+
+.check-counter {
+    max-width: 80px;
+    text-align: end;
+}
+
+.mainContainer {
+    justify-content: space-around;
+
+}
+
+.headline {
+    margin: 0;
+}
+
+.element-price {
+    max-width: 80px;
+    text-align: center;
+}
+
+.pay-btn {
+    font-family: "Tiny5", sans-serif;
+    background-color: chartreuse;
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+    border: 0;
+}
