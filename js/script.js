@@ -1,3 +1,5 @@
+const tg = window.Telegram.WebApp;
+
 const food = [
     {
         name: "avocado",
@@ -33,7 +35,6 @@ const mc = document.querySelector(".mainContainer");
 const hc = document.querySelector(".headContainer");
 const payBtn = document.querySelector(".pay-btn");
 const editBtn = document.querySelector(".edit-btn");
-let sum = 0;
 
 
 food.forEach(item => {
@@ -71,7 +72,6 @@ food.forEach(item => {
             buttonAdd.classList.remove("hide");
             buttonMinus.classList.add("hide");
             buttonPlus.classList.add("hide");
-            // viewOrder.classList.add("hide");
             counter.classList.add("hide");
             counter.textContent = 0;
             item.counter = 0;
@@ -87,14 +87,12 @@ food.forEach(item => {
         if (sum == 0) {
             viewOrder.classList.add("hide");
         }
-        
     });
 
     buttonPlus.addEventListener("click", () => {
         counter.textContent++;
         item.counter++;
     });
-
 });
 
 
@@ -144,6 +142,5 @@ payBtn.addEventListener("click", () => {
     });
     const stringCheck = JSON.stringify(buyedItems);
     console.log(stringCheck, typeof(stringCheck));
-    
+    tg.sendData(stringCheck);
 });
-
